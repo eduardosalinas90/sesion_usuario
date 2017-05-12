@@ -114,7 +114,7 @@ AUTH_PASSWORD_VALIDATORS = [
 
 LANGUAGE_CODE = 'es-ve'
 
-TIME_ZONE = 'America/Venezuela'
+TIME_ZONE = 'America/Caracas'
 
 USE_I18N = True
 
