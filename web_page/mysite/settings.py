@@ -28,7 +28,7 @@ DEBUG = True
 ALLOWED_HOSTS = []
 EMAIL_HOST = 'smtp.gmail.com'
 EMAIL_HOST_USER = 'eduardosalinas1890@gmail.com'
-EMAIL_HOST_PASSWORD = ''
+EMAIL_HOST_PASSWORD = 'Day1na#60'
 EMAIL_PORT = 587
 EMAIL_USE_TLS = True
 
