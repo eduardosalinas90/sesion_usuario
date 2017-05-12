@@ -1,0 +1,10 @@
+.navbar {
+    margin-bottom: 0px;
+}
+
+div#video {
+
+    height: 600px;
+    width: 600px;
+    background-color: 1px solid black;
+}

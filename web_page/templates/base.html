@@ -1,0 +1,44 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+<head>
+    <title>{% block title %}SEO WEB{% endblock %}</title>
+    {% include 'head_css.html' %}
+</head>
+<body>
+{% block menu %}
+{% include 'nav.html' %}
+{% endblock %}
+{% if not request.user.is_authenticated %}
+{% block jumbotrom %}
+<div class="jumbotron">
+{% block jumbotrom_content %}
+    <div class="container">
+        <div class="row">
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6">
+                <h1>Curso Django 1.10</h1>
+                <p>Lo maximo</p>
+                <p>
+                    <a class="btn btn-primary btn-lg">Aprender mas</a>
+                </p>
+            </div>
+
+            <div class="col-xs-12 col-sm-6 col-md-6 col-lg-6 video" id="video" style="width: 400px; height: 250px; background-color: black; max-width: 100%; max-height: 100%;">
+
+            </div>
+
+        </div>
+    </div>
+</div>
+{% endblock %}
+
+{% endblock %}
+{% endif %}
+
+{% block main_content %}
+{% endblock %}
+{% include 'load_js.html' %}
+</body>
+</html>
+

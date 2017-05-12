@@ -1,0 +1,12 @@
+{% extends "base.html" %}
+
+
+
+{% block main_content %}
+{% if request.user.is_authenticated %}
+<div class="container">
+<p>lorem</p>
+</div>
+{% endif %}
+{% endblock %}
+
