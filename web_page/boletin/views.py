@@ -4,7 +4,7 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .forms import RegistroForm, ContactForm
 from .models import Registrado
-
+from django.views.defaults import page_not_found
 # Create your views here.
 
 def home(request):
@@ -46,3 +46,8 @@ def contact(request):
     return render(request, 'form_contact.html',context)
 
 
+
+
+def mi_error_404(request):
+    nombre_template = '404.html'
+    return page_not_found(request, template_name=nombre_template)
